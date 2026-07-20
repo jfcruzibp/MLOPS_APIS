@@ -1,0 +1,19 @@
+{
+  "model_name": "RandomForest",
+  "model_version": "random_forest_v1",
+  "symbols_used": [
+    "AAPL",
+    "MSFT",
+    "NVDA"
+  ],
+  "primary_metric": {
+    "name": "accuracy",
+    "value": 1.0
+  },
+  "prediction_horizon": "next_day",
+  "feature_names": [
+    "Return_1D",
+    "Volatility_5D",
+    "SMA_10_Ratio"
+  ]
+}
