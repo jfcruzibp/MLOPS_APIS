@@ -15,6 +15,7 @@ class PredictionResponse(BaseModel):
     prediction_horizon: str
 
 
+
 class HealthResponse(BaseModel):
     status: str
     model_available: bool

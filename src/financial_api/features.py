@@ -16,6 +16,7 @@ class FeatureEngineer:
         """Genera features técnicas por activo garantizando compatibilidad de formatos."""
         processed_dfs = []
 
+
         # 1. Si es una Series (un solo ticker), la convertimos a DataFrame
         if isinstance(df_close, pd.Series):
             ticker_name = df_close.name if df_close.name else "ASSET"

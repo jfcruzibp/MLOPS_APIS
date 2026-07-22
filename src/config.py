@@ -10,6 +10,7 @@ def load_params(path: str | Path) -> dict[str, Any]:
         return yaml.safe_load(file)
 
 
+
 def ensure_parent(path: str | Path) -> Path:
     """Create the parent folder for an output file and return the path."""
     output_path = Path(path)
