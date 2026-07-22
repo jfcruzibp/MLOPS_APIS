@@ -13,6 +13,7 @@ from src.financial_api.schemas import (
 )
 
 
+
 # =====================================================================
 # CICLO DE VIDA DE LA API (Lifespan: Ejecución automática al arrancar)
 # =====================================================================
@@ -110,9 +111,9 @@ def get_market_data(symbol: str, limit: int = Query(default=5, ge=1, le=100)):
 )
 def predict(request: PredictionRequest = Body(...)):
     """Realiza la predicción de tendencia para un símbolo específico.
-    Si el usuario solicita usar datos en caché y estos existen, se utilizarán.
-    NO SE REQUIERE ENTRENAMIENTO MANUAL: el modelo se carga automáticamente desde los artefactos.
-    NO REQUIERE PARAMETROS DE ENTRADA ADICIONALES: el endpoint maneja la obtención de datos y la creación de features internamente.
+    \nSi el usuario solicita usar datos en caché y estos existen, se utilizarán.
+    \nNO SE REQUIERE ENTRENAMIENTO MANUAL: el modelo se carga automáticamente desde los artefactos.
+    \nNO REQUIERE PARAMETROS DE ENTRADA PERO SI ES NECESARIO PASARLE UN BODY EN FORMATO JSON: el endpoint maneja la obtención de datos y la creación de features internamente.
     """
     try:
         base_dir = os.path.abspath(
