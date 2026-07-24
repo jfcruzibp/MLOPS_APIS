@@ -1,0 +1,37 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# ⚠️ NO incluir poetry.lock aquí
+# (elimina cualquier línea que diga "poetry.lock")
+
+# Datos y artefactos
+data/raw/
+data/processed/
+artifacts/
+
+# Documentación
+README.md
+TEAM.md
+*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
