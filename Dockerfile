@@ -1,5 +1,5 @@
-# Usar imagen oficial de Python 3.13 slim
-FROM python:3.13-slim
+# Usar imagen oficial de Python 3.11 (en lugar de 3.13)
+FROM python:3.11-slim
 
 # Establecer variables de entorno
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -37,4 +37,4 @@ RUN mkdir -p /app/data/raw /app/data/processed /app/artifacts
 EXPOSE 8000
 
 # Comando para ejecutar la API con uvicorn
-CMD ["uvicorn", "src.financial_api.api:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "src.financial_api.api:app", "--host", "0.0.0.0", "--port", "8000"]
