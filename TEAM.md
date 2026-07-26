@@ -2,19 +2,20 @@
 ## Julián Javier Gómez Reyes
     Rol: Administrador del repositorio
         . Crear el repositorio en GitHub.
-        . Configurar la estructura base del proyecto.
-        . Velar por que la rama main no sea modificada directamente.
-        . Revisar, comentar y aprobar Pull Requests.
-        . Garantizar la coherencia final del repositorio.
+        . Definir la estructura base del proyecto.
+        . Velar por el uso de ramas y Pull Requests.
+        . Revisar que la documentación final sea coherente con el código.
 
 ## John Fernando Cruz Becerra
-    Rol: Desarrollo de datos y pipeline
-        . Construir o consolidar el dataset mock.
-        . Implementar el flujo de versionamiento de datos con DVC.
-        . Definir y documentar el pipeline reproducible.
+    Rol: Datos, features y modelo
+        . Descargar datos históricos con yfinance.
+        . Construir un dataset local o cacheado para reproducibilidad.
+        . Crear variables como retornos, medias móviles, volatilidad o rezagos.
+        . Entrenar y serializar un modelo predictivo simple.
 
 ## Mauricio Alejandro Gaviria Alzate
-    Rol: Desarrollo de modelado y experimentación
-        . Entrenar al menos dos modelos de clasificación.
-        . Registrar experimentos en MLflow.
-        . Comparar resultados y apoyar la selección del mejor modelo.
+    Rol: API, contratos, pruebas y Docker
+        . Implementar los endpoints de FastAPI.
+        . Definir contratos de entrada y salida con Pydantic.
+        . Crear pruebas con pytest y TestClient.
+        . Construir el Dockerfile y validar la ejecución local.
