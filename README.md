@@ -27,10 +27,12 @@ cd MLOPS_APIS
 poetry install
 
 ### Ejecutar
+```text
 poetry run uvicorn src.financial_api.api:app --reload
 poetry run pytest
 docker build -t financial-api:local .
 docker run --rm -p 8000:8000 financial-api:local
+```
 
 Abrir en navegador:
 http://127.0.0.1:8000/docs
